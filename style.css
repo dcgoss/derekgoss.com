@@ -354,6 +354,13 @@ a{
 }
 
 /*****************************RESPONSIVENESS #MUCHLOL #CHEESING*******************************/
+@media only screen
+and (max-height : 1080) {
+    #instructions{
+        margin-top:-110px;
+    }
+}
+
 @media only screen 
 and (max-device-width : 800px) {
     #navigationbar{
@@ -366,34 +373,39 @@ and (max-device-width : 800px) {
     }
     
     .wrapper{
-    border-left: none;
-    border-right: none;
+        border-left: none;
+        border-right: none;
     }
     
     #greeting{
-    font-size: 8em;
+        font-size: 8em;
     }
 
     #name{
-    font-size: 3.7em;
+        font-size: 3.7em;
     }
 
     #subtitle{
-    font-size: 5.5em;
+        font-size: 5.5em;
     }
 
     .whitespace{
-    height: 375px;
+        height: 375px;
     }
     
     #instructions{
         display: none;
     }
     
+    #remove{
+        display: none;
+    }
+    
     .content{
-    width: 100%;
-    left: 50%;
+        width: 100%;
+        left: 50%;
     margin-left: -50%;
+    
     }
     
     .infobox h1{
@@ -442,7 +454,7 @@ and (max-width : 975px) {
     height: 200px;
     }
     
-    #instructions{
+    #remove{
         display: none;
     }
     
