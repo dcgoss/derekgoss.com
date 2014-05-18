@@ -218,6 +218,24 @@ a{
     color: rgb(255, 235, 0);
 }
 /*****************************SECTIONAL CONTENT*******************************/
+.text{
+    color: #fff;
+    font-size: 3em;
+}
+
+/*****************ABOUT*****************/
+/*CONTAINER*/
+#aboutme{
+    position: relative;
+    width: 90%;
+    font-family:footerfont;
+    text-align: left;
+    font-size: 1.6em;
+    left: 50%;
+    margin-left: -45%;
+}
+
+/*PICTURES*/
 #me{
     width: 18%;
     margin-left: 30px;
@@ -230,17 +248,7 @@ a{
     float: right;
 }
 
-#aboutme{
-    position: relative;
-    width: 90%;
-    font-family:footerfont;
-    text-align: left;
-    font-size: 1.6em;
-    left: 50%;
-    margin-left: -45%;
-}
-
-
+/*****************MEDIA*****************/
 .mediacontent{
     position: relative;
     width: 90%;
@@ -250,7 +258,7 @@ a{
     color: rgb(191, 142, 255);
 }
 
-.contentheader{
+.mediaheader{
     font-size: 4em;
     text-decoration: underline;
 }
@@ -258,12 +266,7 @@ a{
 #socialheader{
     padding-top: 40px;
 }
-
-.text{
-    color: #fff;
-    font-size: 3em;
-}
-
+/*LINKS TO SOCIAL MEDIA*/
 #instagram{
     color: rgb(139, 194, 255); 
     text-decoration: underline;
@@ -286,6 +289,7 @@ a{
     color: #fff;
 }
 
+/*****************CONTACT*****************/
 .contactcontent{
     position: relative;
     width: 90%;
@@ -299,7 +303,7 @@ a{
     width: 200px;
     background:#ffff9e; 
 }
-
+/*LINKS TO EMAIL*/
 .emaillink{
     color: #ffff9e;
     text-decoration: underline;
@@ -314,6 +318,7 @@ a{
 #whitespace{
     height: 350px;
 }
+
 /*****************************COPYRIGHT FOOTER*******************************/
 .footer{
     position: absolute;
@@ -354,6 +359,7 @@ a{
 }
 
 /*****************************RESPONSIVENESS #MUCHLOL #CHEESING*******************************/
+/*TALL SCREENS*/
 @media only screen
 and (max-height : 1080) {
     #instructions{
@@ -361,6 +367,7 @@ and (max-height : 1080) {
     }
 }
 
+/*MOBILE*/
 @media only screen 
 and (max-device-width : 800px) {
     #navigationbar{
@@ -393,7 +400,7 @@ and (max-device-width : 800px) {
         height: 375px;
     }
     
-    #remove{
+    #instructions{
         display: none;
     }
     
@@ -435,6 +442,7 @@ and (max-device-width : 800px) {
     
 }
 
+/*SMALL SCREENS*/
 @media only screen 
 and (max-width : 975px) {
     #navigationbar{
@@ -450,7 +458,7 @@ and (max-width : 975px) {
     height: 200px;
     }
     
-    #remove{
+    #instructions{
         display: none;
     }
     
