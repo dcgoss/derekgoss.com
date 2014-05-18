@@ -393,10 +393,6 @@ and (max-device-width : 800px) {
         height: 375px;
     }
     
-    #instructions{
-        display: none;
-    }
-    
     #remove{
         display: none;
     }
