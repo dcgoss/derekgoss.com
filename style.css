@@ -379,7 +379,7 @@ and (max-device-width : 800px) {
     }
 
     .whitespace{
-    height: 175px;
+    height: 275px;
     }
     
     #instructions{
@@ -435,7 +435,7 @@ and (max-width : 975px) {
     }
     
     .whitespace{
-    height: 40px;
+    height: 100px;
     }
     
     #instructions{
