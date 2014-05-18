@@ -407,7 +407,8 @@ and (max-device-width : 800px) {
     .content{
         width: 100%;
         left: 50%;
-    margin-left: -50%;
+        margin-left: -50%;
+        margin-top: 20%;
     
     }
     
