@@ -172,15 +172,19 @@ a{
     height: 100%;
     left: 50%;
     margin-left: -45%;
-    margin-top: 45px;
+    margin-top: 30%;
 }
 
 #instructions{
+    margin-top:-220px;
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
     text-align: center;
     font-family: footerfont;
     color: #fff;
     font-size: 2em;
-    margin-bottom: 30%;
 }
 
 .infobox{
