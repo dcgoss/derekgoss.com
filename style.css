@@ -1,6 +1,10 @@
 a{
     color: inherit;
 }
+
+.google{
+    display:none;
+}
 /*****************************BACKGROUND*******************************/
 #background {
   /* Set rules to fill background */
