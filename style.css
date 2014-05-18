@@ -400,6 +400,10 @@ and (max-device-width : 800px) {
     font-size: 4em;
     }  
     
+    #aboutme{
+        font-size: 1;
+    }
+    
     #instagram{
         transition: none;
     }
