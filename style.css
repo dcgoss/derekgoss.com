@@ -396,10 +396,6 @@ and (max-device-width : 800px) {
     font-size: 5em;
     }
     
-    .infobox p {
-    font-size: 4em;
-    }  
-    
     #aboutme{
         font-size: 1;
     }
