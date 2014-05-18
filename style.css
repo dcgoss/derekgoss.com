@@ -1,3 +1,6 @@
+a{
+    color: inherit;
+}
 /*****************************BACKGROUND*******************************/
 #background {
   /* Set rules to fill background */
@@ -142,7 +145,7 @@
 
 #name{
     margin-top: 1.9%;
-    font-size: 5.5em;
+    font-size: 2.7em;
     opacity: 0;
     color: #fff;
 }
@@ -177,25 +180,22 @@
     font-family: footerfont;
     color: #fff;
     font-size: 2em;
+    margin-bottom: 30%;
 }
 
 .infobox{
-    margin-top: 30%;
+    margin-bottom: 30%;
     background: rgba(0, 0, 0, 0.6);
     font-family: footerfont;
     color: #fff;
     text-align: center;
+    overflow: auto;
 }
 
 .infobox h1{
     font-family: menufont;
-    font-size: 3em;
+    font-size: 4em;
     background: #000;
-    text-align: center;
-}
-
-.infobox p {
-    font-size: 2em;
 }
 
 #aboutheader{
@@ -213,9 +213,102 @@
 #contactheader{
     color: rgb(255, 235, 0);
 }
+/*****************************SECTIONAL CONTENT*******************************/
+#me{
+    width: 18%;
+    margin-left: 30px;
+    float: left;
+}
+
+#sailing{
+    width: 30%;
+    margin-left: 30px;
+    float: right;
+}
+
+#aboutme{
+    position: relative;
+    width: 90%;
+    font-family:footerfont;
+    text-align: left;
+    font-size: 1.6em;
+    left: 50%;
+    margin-left: -45%;
+}
+
+
+.mediacontent{
+    position: relative;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    text-align: center;
+    color: rgb(191, 142, 255);
+}
+
+.contentheader{
+    font-size: 4em;
+    text-decoration: underline;
+}
+
+#socialheader{
+    padding-top: 40px;
+}
+
+.text{
+    color: #fff;
+    font-size: 3em;
+}
+
+#instagram{
+    color: rgb(139, 194, 255); 
+    text-decoration: underline;
+    font-style: italic;
+    transition: color 0.25s linear;   
+}
+#instagram:hover{
+    color: #fff;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#github{
+    color: rgb(240,201,129);
+    text-decoration: underline;
+    font-style: italic;
+    transition: color 0.25s linear;
+}
+#github:hover{
+    color: #fff;
+}
+
+.contactcontent{
+    position: relative;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    font-size: 3em;
+    text-align: center;
+}
+
+#emailpicture{
+    width: 200px;
+    background:#ffff9e; 
+}
+
+.emaillink{
+    color: #ffff9e;
+    text-decoration: underline;
+    font-style: italic;
+    word-break: break-all;
+    transition: color 0.25s linear;
+}
+.emaillink:hover{
+    color: #fff;
+}
 
 #whitespace{
-    height: 150px;
+    height: 350px;
 }
 /*****************************COPYRIGHT FOOTER*******************************/
 .footer{
@@ -305,7 +398,23 @@ and (max-device-width : 800px) {
     
     .infobox p {
     font-size: 4em;
-    }   
+    }  
+    
+    #aboutme{
+        font-size: 3em;
+    }
+    
+    #instagram{
+        transition: none;
+    }
+    
+    #github{
+        transition: none;
+    }
+    
+    .emaillink{
+        transition: none;
+    }
     
     .footer{
     margin-left: -300px;
