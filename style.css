@@ -371,7 +371,7 @@ and (max-device-width : 800px) {
     }
 
     #name{
-    font-size: 7.5em;
+    font-size: 3.7em;
     }
 
     #subtitle{
@@ -399,10 +399,6 @@ and (max-device-width : 800px) {
     .infobox p {
     font-size: 4em;
     }  
-    
-    #aboutme{
-        font-size: 3em;
-    }
     
     #instagram{
         transition: none;
