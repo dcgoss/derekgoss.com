@@ -253,6 +253,16 @@ a{
     float: right;
 }
 
+#glass{
+    color: rgb(114, 244, 180); 
+    text-decoration: underline;
+    font-style: italic;
+    transition: color 0.25s linear;   
+}
+#glass:hover{
+    color: #fff;
+}
+
 /*****************MEDIA*****************/
 .mediacontent{
     position: relative;
@@ -280,8 +290,6 @@ a{
 }
 #instagram:hover{
     color: #fff;
-    text-decoration: underline;
-    font-style: italic;
 }
 
 #github{
@@ -364,14 +372,6 @@ a{
 }
 
 /*****************************RESPONSIVENESS #MUCHLOL #CHEESING*******************************/
-/*TALL SCREENS*/
-@media only screen
-and (min-height : 1080px) {
-    #instructions{
-        margin-top:-110px;
-    }
-}
-
 /*MOBILE*/
 @media only screen 
 and (max-device-width : 800px) {
@@ -425,16 +425,32 @@ and (max-device-width : 800px) {
         font-size: 1.1em;;
     }
     
+    #glass{
+        transition: none;   
+    }
+    #glass:hover{
+        color: rgb(114, 244, 180);
+    }
+    
     #instagram{
         transition: none;
+    }
+    #instagram:hover{
+        color: rgb(139, 194, 255);
     }
     
     #github{
         transition: none;
     }
+    #github:hover{
+        color: rgb(240,201,129);
+    }
     
     .emaillink{
         transition: none;
+    }
+    .emaillink:hover{
+        color: #ffff9e;
     }
     
     .footer{
@@ -446,6 +462,14 @@ and (max-device-width : 800px) {
     font-size: 3em;
     }
     
+}
+
+/*TALL SCREENS*/
+@media only screen
+and (min-height : 1080px) {
+    #instructions{
+        margin-top:-110px;
+    }
 }
 
 /*SMALL SCREENS*/
@@ -473,6 +497,7 @@ and (max-width : 975px) {
     }
 }
 
+/*SMALLER SCREENS*/
 @media only screen 
 and (max-width : 750px){
     .wrapper{
