@@ -4,7 +4,7 @@ $(document).ready(function() {
 	var looper = setInterval(function() {
 		 adjectives(count);
 		 count++;
-		 if(count==13)
+		 if(count==12)
 		 {
 		 	count=0;
 		 }
@@ -13,7 +13,7 @@ $(document).ready(function() {
 });
 
 function adjectives(i) {
-	var words = ["plays lacrosse.", "made this website from scratch.", "is a sauce aficionado.", "ran a 5:30 mile.", "is fluent in Python.", "loves sailing.", "always has a new product idea.", "wants to found a startup.", "is learning Java.", "plays percussion.", "is moving to Philadelphia.", "always wears bowties.", "runs cross-country."];
+	var words = ["plays lacrosse.", "made this website from scratch.", "is a sauce aficionado.", "ran a 5:30 mile.", "is fluent in Python.", "loves sailing.", "always has a new product idea.", "wants to found a startup.", "plays percussion.", "just moved to Philadelphia.", "always wears bowties.", "runs cross-country."];
 
 		$("#fillin").fadeOut(500, function() {
 			$(this).text(words[i]).fadeIn(500);
