@@ -9,10 +9,10 @@ a{
 #background {
   /* Set rules to fill background */
   min-height: 100%;
-  min-width: 1024px;
+  min-width: 2000px;
   /* Set up proportionate scaling */
   width: 100%;
-  height: auto;
+  height: 100%;
   /* Set up positioning */
   position: fixed;
   z-index: -2;
