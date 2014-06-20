@@ -7,10 +7,8 @@ a{
 }
 /*****************************BACKGROUND*******************************/
 body{ 
-  background: url(Images/background.jpg); 
-  position: fixed;
+  background: url(Images/background.jpg) no-repeat fixed center; 
   background-size: contain;
-  background-repeat: no-repeat;
 }
 
 /*CENTER LOGO*/
