@@ -374,7 +374,7 @@ a{
 /*****************************RESPONSIVENESS #MUCHLOL #CHEESING*******************************/
 /*MOBILE*/
 @media only screen 
-and (max-device-width : 0px){
+and (max-device-width : 800px){
     #navigationbar{
         display: none;
     }
