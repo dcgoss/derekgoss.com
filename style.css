@@ -7,7 +7,7 @@ a{
 }
 /*****************************BACKGROUND*******************************/
 body{ 
-  background: url(Images/background.jpg) fixed; 
+  background: url(Images/background.jpg) center center; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
