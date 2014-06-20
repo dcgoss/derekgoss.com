@@ -422,7 +422,7 @@ and (max-device-width : 800px) {
     }
     
     #aboutme{
-        font-size: 10.1em;;
+        font-size: 1.1em;;
     }
     
     #glass{
@@ -462,6 +462,13 @@ and (max-device-width : 800px) {
     font-size: 3em;
     }
     
+}
+
+@media only screen 
+and (max-device-width : 900px) {
+    #aboutme{
+        font-size: 2em;
+    }
 }
 
 /*TALL SCREENS*/
