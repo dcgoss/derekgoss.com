@@ -6,17 +6,12 @@ a{
     display:none;
 }
 /*****************************BACKGROUND*******************************/
-#background {
-  /* Set rules to fill background */
-  min-height: 100%;
-  /* Set up proportionate scaling */
-  width: 100%;
-  /* Set up positioning */
-  position: fixed;
-  z-index: -2;
-  top: 0;
-  left: 0;
-  bottom: 0;
+html{ 
+  background: url(Images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*CENTER LOGO*/
