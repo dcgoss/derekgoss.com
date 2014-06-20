@@ -465,7 +465,7 @@ and (max-device-width : 800px) {
 }
 
 @media only screen 
-and (max-device-width : 1200px) {
+and (max-device-width : 1500px) {
     #aboutme{
         font-size: 2em;
     }
