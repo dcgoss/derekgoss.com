@@ -374,7 +374,7 @@ a{
 /*****************************RESPONSIVENESS #MUCHLOL #CHEESING*******************************/
 /*MOBILE*/
 @media only screen 
-and (min-device-width : 320px){
+and (min-device-width : 0px){
     #navigationbar{
         display: none;
     }
@@ -422,7 +422,7 @@ and (min-device-width : 320px){
     }
     
     #aboutme{
-        font-size: 30em;;
+        font-size: 2em;;
     }
     
     #glass{
