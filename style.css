@@ -6,7 +6,7 @@ a{
     display:none;
 }
 /*****************************BACKGROUND*******************************/
-html{ 
+body{ 
   background: url(Images/background.jpg) center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
