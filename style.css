@@ -6,9 +6,17 @@ a{
     display:none;
 }
 /*****************************BACKGROUND*******************************/
-body{ 
-  background: url(Images/background.jpg) no-repeat fixed center; 
-  background-size: contain;
+#background {
+  /* Set rules to fill background */
+  min-height: 100%;
+  /* Set up proportionate scaling */
+  width: 100%;
+  /* Set up positioning */
+  position: fixed;
+  z-index: -2;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
 
 /*CENTER LOGO*/
