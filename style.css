@@ -300,7 +300,7 @@ a{
     color: #fff;
 }
 
-#github{
+.github{
     color: rgb(240,201,129);
     text-decoration: underline;
     font-style: italic;
