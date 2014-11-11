@@ -231,6 +231,11 @@ a{
     font-size: 3em;
 }
 
+.textSubtitle{
+    color: #fff;
+    font-size: 2em;
+}
+
 /*****************ABOUT*****************/
 /*CONTAINER*/
 #aboutme{
