@@ -450,7 +450,7 @@ and (max-device-width : 800px){
     .github{
         transition: none;
     }
-    .github:hover{
+    
     .github:hover{
         color: rgb(240,201,129);
     }
