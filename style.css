@@ -123,7 +123,7 @@ a{
     font-family: menufont;
     font-size: 1.5em;
     margin-left:25px;
-    color: #ff7237;
+    color: #fff;
 }
 
 /*****************************GREETING*******************************/
@@ -306,7 +306,7 @@ a{
     font-style: italic;
     transition: color 0.25s linear;
 }
-#github:hover{
+.github:hover{
     color: #fff;
 }
 
@@ -447,10 +447,11 @@ and (max-device-width : 800px){
         color: rgb(139, 194, 255);
     }
     
-    #github{
+    .github{
         transition: none;
     }
-    #github:hover{
+    .github:hover{
+    .github:hover{
         color: rgb(240,201,129);
     }
     
