@@ -13,7 +13,7 @@ $(document).ready(function() {
 });
 
 function adjectives(i) {
-	var words = ["plays lacrosse.", "made this website from scratch.", "loves sailing.", "is an app developer.", "plays percussion.", "just moved to PA.", "always wears bowties.", "runs cross-country."];
+	var words = ["plays lacrosse.", "made this website.", "loves sailing.", "is an app developer.", "plays percussion.", "just moved to PA.", "prefers bowties.", "runs cross-country."];
 
 		$("#fillin").fadeOut(500, function() {
 			$(this).text(words[i]).fadeIn(500);
