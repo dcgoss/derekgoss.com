@@ -7,3 +7,31 @@ body {
   height: 100%;
   width: 100%;
 }
+
+//////////
+// LOGO //
+//////////
+$logo-size: 200px;
+$logo-container-size: $logo-size + 20;
+
+#logo-background {
+  position: absolute;
+  background-color: white;
+  border-radius: $logo-container-size / 5;
+  left: 50%;
+  top: 50%;
+  margin-left: -($logo-container-size / 2);
+  margin-top: -($logo-container-size / 2);
+  width: $logo-container-size;
+  height: $logo-container-size;
+}
+
+#logo {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -($logo-size / 2);
+  margin-top: -($logo-size / 2);
+  width: $logo-size;
+  height: $logo-size;
+}
