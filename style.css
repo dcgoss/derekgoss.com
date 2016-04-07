@@ -6,4 +6,37 @@ body {
   height: 100%;
   width: 100%; }
 
+#logo-background {
+  position: absolute;
+  background-color: white;
+  border-radius: 44px;
+  left: 50%;
+  top: 50%;
+  margin-left: -110px;
+  margin-top: -110px;
+  width: 220px;
+  height: 220px; }
+  @media screen and (max-width: 800px) {
+    #logo-background {
+      border-radius: 24px;
+      margin-left: -60px;
+      margin-top: -60px;
+      width: 120px;
+      height: 120px; } }
+
+#logo {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+  width: 200px;
+  height: 200px; }
+  @media screen and (max-width: 800px) {
+    #logo {
+      margin-left: -50px;
+      margin-top: -50px;
+      width: 100px;
+      height: 100px; } }
+
 /*# sourceMappingURL=style.css.map */
