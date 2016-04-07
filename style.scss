@@ -1,3 +1,8 @@
+////////////////////////
+// MEDIA SCREEN SIZES //
+////////////////////////
+$iphone-max-width: 800px;
+
 body {
   background-color: black;
 }
@@ -12,7 +17,9 @@ body {
 // LOGO //
 //////////
 $logo-size: 200px;
+$logo-size-small: $logo-size / 2;
 $logo-container-size: $logo-size + 20;
+$logo-container-size-small: $logo-size-small + 20;
 
 #logo-background {
   position: absolute;
@@ -24,6 +31,13 @@ $logo-container-size: $logo-size + 20;
   margin-top: -($logo-container-size / 2);
   width: $logo-container-size;
   height: $logo-container-size;
+  @media screen and (max-width: $iphone-max-width) {
+    border-radius: $logo-container-size-small /5;
+    margin-left: -($logo-container-size-small / 2);
+    margin-top: -($logo-container-size-small / 2);
+    width: $logo-container-size-small;
+    height: $logo-container-size-small;
+  }
 }
 
 #logo {
@@ -34,4 +48,10 @@ $logo-container-size: $logo-size + 20;
   margin-top: -($logo-size / 2);
   width: $logo-size;
   height: $logo-size;
+  @media screen and (max-width: $iphone-max-width) {
+    margin-left: -($logo-size-small / 2);
+    margin-top: -($logo-size-small / 2);
+    width: $logo-size-small;
+    height: $logo-size-small;
+  }
 }
