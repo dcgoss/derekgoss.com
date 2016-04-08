@@ -3,19 +3,62 @@
 ////////////////////////
 $iphone-max-width: 800px;
 
+
 body {
   background-color: black;
 }
 
-#particles-js {
-  position: absolute;
-  height: 100%;
-  width: 100%;
+h1, p {
+  font-family: "Open Sans", "Helvetica Neue";
 }
 
+p {
+  color: black;
+  margin: 10px 10px 10px 10px;
+}
+
+h1 {
+  color: #FFDF00;
+  font-weight: bold;
+}
+
+#first-section {
+  margin-top: 0;
+}
+
+.section {
+  margin-top: 100px;
+}
+
+.section-header {
+  text-align: center;
+}
+
+.section-content {
+  background-color: white;
+  border-radius: 10px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 //////////
+// HERO //
+//////////
+#hero {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
 // LOGO //
-//////////
 $logo-size: 200px;
 $logo-size-small: $logo-size / 2;
 $logo-container-size: $logo-size + 20;
@@ -29,6 +72,7 @@ $logo-container-size-small: $logo-size-small + 20;
   top: 50%;
   margin-left: -($logo-container-size / 2);
   margin-top: -($logo-container-size / 2);
+
   width: $logo-container-size;
   height: $logo-container-size;
   @media screen and (max-width: $iphone-max-width) {
@@ -54,4 +98,29 @@ $logo-container-size-small: $logo-size-small + 20;
     width: $logo-size-small;
     height: $logo-size-small;
   }
+}
+
+
+///////////
+// ABOUT //
+///////////
+
+
+///////////
+// LINKS //
+///////////
+#link-content {
+  text-align: center;
+}
+
+.link-button {
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#github-logo {
+  width: 100px;
+  color: white;
 }

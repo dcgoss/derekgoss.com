@@ -1,10 +1,42 @@
 body {
   background-color: black; }
 
+h1, p {
+  font-family: "Open Sans", "Helvetica Neue"; }
+
+p {
+  color: black;
+  margin: 10px 10px 10px 10px; }
+
+h1 {
+  color: #FFDF00;
+  font-weight: bold; }
+
+#first-section {
+  margin-top: 0; }
+
+.section {
+  margin-top: 100px; }
+
+.section-header {
+  text-align: center; }
+
+.section-content {
+  background-color: white;
+  border-radius: 10px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto; }
+
+#hero {
+  height: 100vh;
+  width: 100vw;
+  background-color: black; }
+
 #particles-js {
-  position: absolute;
   height: 100%;
-  width: 100%; }
+  width: 100%;
+  position: fixed; }
 
 #logo-background {
   position: absolute;
@@ -38,5 +70,18 @@ body {
       margin-top: -50px;
       width: 100px;
       height: 100px; } }
+
+#link-content {
+  text-align: center; }
+
+.link-button {
+  margin-top: 10px;
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: white; }
+
+#github-logo {
+  width: 100px;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
