@@ -57,6 +57,17 @@ img, button {
   margin-right: auto;
 }
 
+.fill-in:hover, .fill-in:active, .fill-in:focus {
+  color: black;
+  background-color: white !important;
+
+  @media screen and (max-width: $bootstrap-column-collapse-width){
+    // don't show highlights on touchscreens
+    color: white;
+    background-color: transparent !important;
+  }
+}
+
 
 //////////
 // HERO //
@@ -116,6 +127,30 @@ $logo-container-size-small: $logo-size-small + 20;
   }
 }
 
+// DOWN INDICATOR //
+$down-logo-size: 60px;
+$down-background-size: $down-logo-size + 10;
+#down-indicator {
+  position: absolute;
+  border: 1px solid white;
+  border-radius: $down-background-size;
+  width: $down-background-size;
+  height: $down-background-size;
+  left: 50%;
+  top: 70%;
+  margin-left: -($down-background-size / 2);
+  text-align: left; // keeps from interfering with #down-icon's alignment
+}
+
+#down-icon {
+  position: relative;
+  width: $down-logo-size;
+  left: 50%;
+  top: 50%;
+  margin-left: -($down-logo-size / 2);
+  margin-top: -($down-logo-size / 2);
+}
+
 
 ///////////
 // ABOUT //
@@ -139,16 +174,6 @@ $logo-container-size-small: $logo-size-small + 20;
   @media screen and (max-width: $bootstrap-column-collapse-width){
     // set spacing for when Bootstrap collapses the buttons into a stack
     margin-top: 20px;
-  }
-}
-.button:hover, .button:active, .button:focus {
-  color: black;
-  background-color: white !important;
-
-  @media screen and (max-width: $bootstrap-column-collapse-width){
-    // don't show highlights on touchscreens
-    color: white;
-    background-color: transparent !important;
   }
 }
 
