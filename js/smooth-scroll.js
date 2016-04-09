@@ -1,14 +1,7 @@
-$(function() {
-    $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-                $('html,body').animate({
-                    scrollTop: target.offset().top-250
-                }, 1000, "easeInOutCubic");
-                return false;
-            }
-        }
-    });
+// http://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1000, "easeInOutCubic");
+    return false;
 });
