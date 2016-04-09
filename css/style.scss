@@ -2,7 +2,9 @@
 // MEDIA SCREEN SIZES //
 ////////////////////////
 $iphone-max-width: 800px;
+$bootstrap-column-collapse-max-width: 1000px;
 
+$gold-color: #FFDF00;
 
 body {
   background-color: black;
@@ -18,8 +20,21 @@ p {
 }
 
 h1 {
-  color: #FFDF00;
+  color: $gold-color;
   font-weight: bold;
+}
+
+button:focus{
+  outline: none !important; // remove blue outline
+}
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
 }
 
 #first-section {
@@ -115,13 +130,31 @@ $logo-container-size-small: $logo-size-small + 20;
 }
 
 .link-button {
-  margin-top: 10px;
-  border: 2px solid white;
+  border: 2px solid white !important;
   border-radius: 10px;
+  background-color: transparent;
+  @media screen and (max-width: $bootstrap-column-collapse-max-width){
+    margin-top: 20px;
+  }
+}
+.link-button:hover {
   background-color: white;
+  @media screen and (max-width: $bootstrap-column-collapse-max-width){
+    margin-top: 20px;
+    background-color: transparent !important;
+  }
 }
 
-#github-logo {
+.link-button-logo {
   width: 100px;
-  color: white;
+}
+
+////////////
+// FOOTER //
+////////////
+.footer {
+  height: 50px;
+  //width: 100%;
+  margin-top: 100px;
+  background-color: white;
 }

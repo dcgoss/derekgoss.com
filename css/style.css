@@ -12,6 +12,16 @@ h1 {
   color: #FFDF00;
   font-weight: bold; }
 
+button:focus {
+  outline: none !important; }
+
+img {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-drag: none; }
+
 #first-section {
   margin-top: 0; }
 
@@ -76,13 +86,26 @@ h1 {
   text-align: center; }
 
 .link-button {
-  margin-top: 10px;
-  border: 2px solid white;
+  border: 2px solid white !important;
   border-radius: 10px;
-  background-color: white; }
+  background-color: transparent; }
+  @media screen and (max-width: 1000px) {
+    .link-button {
+      margin-top: 20px; } }
 
-#github-logo {
-  width: 100px;
-  color: white; }
+.link-button:hover {
+  background-color: white; }
+  @media screen and (max-width: 1000px) {
+    .link-button:hover {
+      margin-top: 20px;
+      background-color: transparent !important; } }
+
+.link-button-logo {
+  width: 100px; }
+
+.footer {
+  height: 50px;
+  margin-top: 100px;
+  background-color: white; }
 
 /*# sourceMappingURL=style.css.map */
