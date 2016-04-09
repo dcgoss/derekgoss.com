@@ -15,7 +15,7 @@ h1 {
 button:focus {
   outline: none !important; }
 
-img {
+img, button {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
@@ -26,7 +26,7 @@ img {
   margin-top: 0; }
 
 .section {
-  margin-top: 100px; }
+  margin-top: 80px; }
 
 .section-header {
   text-align: center; }
@@ -85,23 +85,36 @@ img {
 #link-content {
   text-align: center; }
 
-.link-button {
+.button {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
   border: 2px solid white !important;
   border-radius: 10px;
   background-color: transparent; }
   @media screen and (max-width: 1000px) {
-    .link-button {
+    .button {
       margin-top: 20px; } }
 
-.link-button:hover {
-  background-color: white; }
+.button:hover, .button:active, .button:focus {
+  color: black;
+  background-color: white !important; }
   @media screen and (max-width: 1000px) {
-    .link-button:hover {
-      margin-top: 20px;
+    .button:hover, .button:active, .button:focus {
+      color: white;
       background-color: transparent !important; } }
 
-.link-button-logo {
+.button-logo {
   width: 100px; }
+
+#contact-content {
+  text-align: center; }
+  @media screen and (min-width: 1000px) {
+    #contact-content {
+      margin-top: 20px; } }
+
+#email-button {
+  border-radius: 8px; }
 
 .footer {
   height: 50px;

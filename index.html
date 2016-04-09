@@ -58,26 +58,42 @@
                 <div id="link-content" class="row">
                     <div class="col-md-6">
                         <a target="_blank" href="https://github.com/dcgoss" title="Github">
-                            <button id="github-button" class="link-button btn"
-                                    onmouseover="if ($(window).width > 800) {document.getElementById('github-logo').src='images/github-logo-black.png'}"
-                                    onmouseout="if ($(window).width > 800) {document.getElementById('github-logo').src='images/github-logo-white.png'}">
-                                <img id="github-logo" class="link-button-logo" src="images/github-logo-white.png">
+                            <button id="github-button" class="button btn"
+                                    onmouseover="if ($(window).width() > 1000) {document.getElementById('github-logo').src='images/github-logo-black.png'}"
+                                    onmouseout="if ($(window).width() > 1000) {document.getElementById('github-logo').src='images/github-logo-white.png'}">
+                                <img id="github-logo" class="button-logo" src="images/github-logo-white.png">
                             </button>
                         </a>
                     </div>
                     <div class="col-md-6">
                         <a target="_blank" href="https://instagram.com/dcgoss" title="Instagram">
-                            <button id="instagram-button" class="link-button btn"
-                                    onmouseover="if ($(window).width > 800) {document.getElementById('instagram-logo').src='images/instagram-logo-black.png'}"
-                                    onmouseout="if ($(window).width > 800) {document.getElementById('instagram-logo').src='images/instagram-logo-white.png'}">
-                                <img id="instagram-logo" class="link-button-logo" src="images/instagram-logo-white.png">
+                            <button id="instagram-button" class="button btn"
+                                    onmouseover="if ($(window).width() > 1000) {document.getElementById('instagram-logo').src='images/instagram-logo-black.png'}"
+                                    onmouseout="if ($(window).width() > 1000) {document.getElementById('instagram-logo').src='images/instagram-logo-white.png'}">
+                                <img id="instagram-logo" class="button-logo" src="images/instagram-logo-white.png">
                             </button>
                         </a>
                     </div>
                 </div>
+                <div id="contact" class="section wow fadeInLeft" data-wow-duration="1s">
+                    <div id="contact-header" class="row section-header">
+                        <h1>Contact</h1>
+                    </div>
+                    <div id="contact-content" class="row">
+                        <div class="col-md-12">
+                            <a href="mailto:dcgoss14@gmail.com" title="Email">
+                                <button id="email-button" class="button btn">
+                                    Email Me
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <footer class="footer"></footer>
+        <footer class="footer">
+
+        </footer>
 
         <!-- SCRIPTS-->
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
