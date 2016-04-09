@@ -1,16 +1,24 @@
 body {
   background-color: black; }
 
-h1, p {
-  font-family: "Open Sans", "Helvetica Neue"; }
+header, h1, p {
+  font-family: "Open Sans", "sans-serif";
+  -webkit-font-smoothing: antialiased; }
+
+h1, header {
+  color: #FFDF00; }
 
 p {
   color: black;
   margin: 10px 10px 10px 10px; }
 
 h1 {
-  color: #FFDF00;
   font-weight: bold; }
+
+header {
+  font-family: "Source Sans Pro", "sans-serif";
+  font-size: 40px;
+  font-weight: 200; }
 
 button:focus {
   outline: none !important; }
@@ -58,6 +66,13 @@ img, button {
   width: 100vw;
   position: fixed; }
 
+#header-text {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 20%;
+  left: 0; }
+
 #logo-background {
   position: absolute;
   background-color: white;
@@ -68,7 +83,7 @@ img, button {
   margin-top: -110px;
   width: 220px;
   height: 220px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1100px) {
     #logo-background {
       border-radius: 24px;
       margin-left: -60px;
@@ -84,7 +99,7 @@ img, button {
   margin-top: -100px;
   width: 200px;
   height: 200px; }
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 1100px) {
     #logo {
       margin-left: -50px;
       margin-top: -50px;
