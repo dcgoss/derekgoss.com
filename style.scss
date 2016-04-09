@@ -48,13 +48,14 @@ h1 {
 //////////
 #hero {
   height: 100vh;
-  width: 100vw;
+  width: 100%; // keeps the page from being wider than the screen
   background-color: black;
 }
 
 #particles-js {
-  height: 100%;
-  width: 100%;
+  left: 0; // removes the odd left margin that was being created
+  height: 100vh;
+  width: 100vw;
   position: fixed;
 }
 
