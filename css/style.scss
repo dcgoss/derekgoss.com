@@ -103,7 +103,7 @@ $logo-container-size-small: $logo-size-small + 20;
   width: $logo-container-size;
   height: $logo-container-size;
   @media screen and (max-width: $iphone-max-width) {
-    border-radius: $logo-container-size-small /5;
+    border-radius: $logo-container-size-small / 5;
     margin-left: -($logo-container-size-small / 2);
     margin-top: -($logo-container-size-small / 2);
     width: $logo-container-size-small;
