@@ -22,8 +22,9 @@ img, button {
   -ms-user-select: none;
   -webkit-user-drag: none; }
 
-#first-section {
-  margin-top: 0; }
+#content {
+  margin-top: 0;
+  position: relative; }
 
 .section {
   margin-top: 80px; }
