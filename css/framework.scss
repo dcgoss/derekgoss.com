@@ -51,7 +51,7 @@
 
 $bootstrap-column-collapse-width: 1000px;
 .stack-item {
-  @media screen and (max-width: $bootstrap-column-collapse-width){
+  @media screen and (max-width: $bootstrap-column-collapse-width) {
     // set spacing for when Bootstrap collapses the buttons into a stack
     margin-bottom: 20px;
   }

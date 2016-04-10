@@ -70,7 +70,7 @@ $logo-container-size-small: $logo-size-small + 20;
 // DOWN INDICATOR //
 $down-logo-size: 60px;
 $down-background-size: $down-logo-size + 10;
-#down-indicator {
+#down-indicator-button {
   position: absolute;
   border: 1px solid white;
   border-radius: $down-background-size;
