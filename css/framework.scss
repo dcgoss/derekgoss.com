@@ -2,13 +2,97 @@
 // FRAMEWORK //
 ///////////////
 
+/////////////
+// COLORS //
+////////////
+// We have to include !important to override the defaults
+// set for `a` elements (presumably by Bootstrap)
+.gold {
+  color: #FFDF00 !important;
+}
+
+.harriton-red {
+  color: #E72239 !important;
+}
+
+.pickle-green {
+  color: #3CD638 !important;
+}
+
+.carolina-blue {
+  color: #7BAFD4 !important;
+}
+
+.haverford-red {
+  color: #A20000 !important;
+}
+
+//////////
+// BASE //
+//////////
+
+body {
+  background-color: black;
+}
+
+header, h1, p {
+  font-family: "Open Sans", "sans-serif";
+  -webkit-font-smoothing: antialiased; // fix for thick fonts on Chrome
+}
+
+h1, header {
+  @extend .gold;
+}
+
+$font-size: 18px;
+p, ul {
+  color: black;
+  font-size: $font-size;
+}
+
+$paragraph-margin: 10px;
+p {
+  margin: $paragraph-margin $paragraph-margin $paragraph-margin $paragraph-margin;
+}
+
+ul {
+  margin-left: $paragraph-margin;
+}
+
+h1 {
+  font-weight: bold;
+}
+
+header {
+  font-family: "Source Sans Pro", "sans-serif";
+  font-size: 40px;
+  font-weight: 200;
+}
+
+button:focus, button:hover {
+  outline: none !important; // remove blue outline
+  text-decoration: none;
+}
+
+img, button {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+
+  -webkit-user-drag: none;
+}
+
 #content {
   margin-top: 0;
   position: relative;
 }
 
 .section {
+  max-width: 1000px;
   margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .section-header {
@@ -29,7 +113,7 @@
   background-color: white !important;
 
   $touchscreen-max-width: 1100px; // threshold for disabling highlights on touchscreens
-  @media screen and (max-width: $touchscreen-max-width){
+  @media screen and (max-width: $touchscreen-max-width) {
     // don't show highlights on touchscreens
     color: white;
     background-color: transparent !important;
@@ -55,4 +139,23 @@ $bootstrap-column-collapse-width: 1000px;
     // set spacing for when Bootstrap collapses the buttons into a stack
     margin-bottom: 20px;
   }
+}
+
+.subsection {
+  margin-top: 20px;
+}
+
+.subsection-header {
+  text-align: center;
+  font-weight: bold;
+}
+
+.highlights {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+.highlight-section {
+  margin-bottom: 20px;
 }
