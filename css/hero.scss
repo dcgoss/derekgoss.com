@@ -1,6 +1,8 @@
 //////////
 // HERO //
 //////////
+$rotated-device-max-height: 450px;
+
 #hero {
   height: 100vh;
   width: 100%; // keeps the page from being wider than the screen
@@ -16,11 +18,18 @@
 
 // GREETING //
 #header-text {
+  $header-text-top: 20%;
+
   position: absolute;
   text-align: center;
   width: 100%;
-  top: 20%;
+  top: $header-text-top;
   left: 0;
+
+  @media screen and (max-height: $rotated-device-max-height) {
+    top: $header-text-top - 12%;
+  }
+
 }
 
 // LOGO //
@@ -65,12 +74,15 @@ $logo-container-size-small: $logo-size-small + 20;
     width: $logo-size-small;
     height: $logo-size-small;
   }
+
 }
 
 // DOWN INDICATOR //
 $down-logo-size: 60px;
 $down-background-size: $down-logo-size + 10;
 #down-indicator-button {
+  $down-indicator-top: 70%;
+
   position: absolute;
   border: 1px solid white;
   border-radius: $down-background-size;
@@ -80,6 +92,10 @@ $down-background-size: $down-logo-size + 10;
   top: 70%;
   margin-left: -($down-background-size / 2);
   text-align: left; // keeps from interfering with #down-icon's alignment
+
+  @media screen and (max-height: $rotated-device-max-height) {
+    top: $down-indicator-top + 5%;
+  }
 }
 
 #down-icon {

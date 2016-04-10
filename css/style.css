@@ -47,6 +47,9 @@ img, button {
   width: 100%;
   top: 20%;
   left: 0; }
+  @media screen and (max-height: 450px) {
+    #header-text {
+      top: 8%; } }
 
 #logo-background {
   position: absolute;
@@ -91,6 +94,9 @@ img, button {
   top: 70%;
   margin-left: -35px;
   text-align: left; }
+  @media screen and (max-height: 450px) {
+    #down-indicator-button {
+      top: 75%; } }
 
 #down-icon {
   position: relative;
