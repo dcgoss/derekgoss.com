@@ -81,7 +81,7 @@ img, button {
       width: 100px;
       height: 100px; } }
 
-#down-indicator {
+#down-indicator-button {
   position: absolute;
   border: 1px solid white;
   border-radius: 70px;
