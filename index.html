@@ -30,26 +30,37 @@
     </head>
     <body>
         <div id="particles-js"></div>
-        <div id="hero" class="row">
-            <div id="header-text" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
-                <header id="greeting"></header>
-            </div>
-            <div id="logo-background" class="wow zoomIn" data-wow-duration="1s">
-                <img id="logo" src="images/logo-text.png">
-            </div>
-            <a href="#content">
-                <div id="down-indicator" class="fill-in btn wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s"
-                     onmouseover="if ($(window).width() > 1000) {document.getElementById('down-icon').src='images/down-icon-black.png'}"
-                     onmouseout="if ($(window).width() > 1000) {document.getElementById('down-icon').src='images/down-icon-white.png'}">
-                    <img id="down-icon" class="wow pulse" data-wow-duration="1s" data-wow-delay="3s" src="images/down-icon-white.png">
-                </div>
-            </a>
-        </div>
         <div id="main" class="container">
+            <div id="hero" class="row">
+                <div id="header-text" class="wow fadeIn" data-wow-duration="1s" data-wow-delay="1s">
+                    <header id="greeting"></header>
+                </div>
+                <div id="logo-background" class="wow zoomIn" data-wow-duration="1s">
+                    <img id="logo" src="images/logo-text.png">
+                </div>
+                <a href="#content">
+                    <div id="down-indicator" class="fill-in btn wow fadeInDown" data-wow-duration="1s" data-wow-delay="2s"
+                         onmouseover="if ($(window).width() > 1000) {document.getElementById('down-icon').src='images/down-icon-black.png'}"
+                         onmouseout="if ($(window).width() > 1000) {document.getElementById('down-icon').src='images/down-icon-white.png'}">
+                        <img id="down-icon" class="wow pulse" data-wow-duration="1s" data-wow-delay="3s" src="images/down-icon-white.png">
+                    </div>
+                </a>
+            </div>
             <div id="content">
                 <div id="about" class="section wow fadeInLeft" data-wow-duration="1s">
                     <div id="about-header" class="row section-header">
                         <h1>About</h1>
+                    </div>
+                    <div id="pictures" class="row">
+                        <div class="col-md-4">
+                            <img class="picture" src="images/sailing.png">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="picture" src="images/chemistry.png">
+                        </div>
+                        <div class="col-md-4">
+                            <img class="picture" src="images/xc.png">
+                        </div>
                     </div>
                     <div id="about-content" class="row section-content">
                         <p>
@@ -70,7 +81,7 @@
                     <div id="link-content" class="row">
                         <div class="col-md-6">
                             <a target="_blank" href="https://github.com/dcgoss" title="Github">
-                                <button id="github-button" class="fill-in button btn"
+                                <button id="github-button" class="fill-in button btn stack-item"
                                         onmouseover="if ($(window).width() > 1000) {document.getElementById('github-logo').src='images/github-logo-black.png'}"
                                         onmouseout="if ($(window).width() > 1000) {document.getElementById('github-logo').src='images/github-logo-white.png'}">
                                     <img id="github-logo" class="fill-in button-logo"
@@ -80,7 +91,7 @@
                         </div>
                         <div class="col-md-6">
                             <a target="_blank" href="https://instagram.com/dcgoss" title="Instagram">
-                                <button id="instagram-button" class="fill-in button btn"
+                                <button id="instagram-button" class="fill-in button btn stack-item"
                                         onmouseover="if ($(window).width() > 1000) {document.getElementById('instagram-logo').src='images/instagram-logo-black.png'}"
                                         onmouseout="if ($(window).width() > 1000) {document.getElementById('instagram-logo').src='images/instagram-logo-white.png'}">
                                     <img id="instagram-logo" class="fill-in button-logo"
