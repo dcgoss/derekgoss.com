@@ -30,31 +30,6 @@ img, button {
   -ms-user-select: none;
   -webkit-user-drag: none; }
 
-#content {
-  margin-top: 0;
-  position: relative; }
-
-.section {
-  margin-top: 80px; }
-
-.section-header {
-  text-align: center; }
-
-.section-content {
-  background-color: white;
-  border-radius: 10px;
-  width: 98%;
-  margin-left: auto;
-  margin-right: auto; }
-
-.fill-in:hover, .fill-in:active, .fill-in:focus {
-  color: black;
-  background-color: white !important; }
-  @media screen and (max-width: 1000px) {
-    .fill-in:hover, .fill-in:active, .fill-in:focus {
-      color: white;
-      background-color: transparent !important; } }
-
 #hero {
   height: 100vh;
   width: 100%;
@@ -83,7 +58,7 @@ img, button {
   margin-top: -110px;
   width: 220px;
   height: 220px; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 800px) {
     #logo-background {
       border-radius: 24px;
       margin-left: -60px;
@@ -99,7 +74,7 @@ img, button {
   margin-top: -100px;
   width: 200px;
   height: 200px; }
-  @media screen and (max-width: 1100px) {
+  @media screen and (max-width: 800px) {
     #logo {
       margin-left: -50px;
       margin-top: -50px;
@@ -125,28 +100,29 @@ img, button {
   margin-left: -30px;
   margin-top: -30px; }
 
+#pictures {
+  text-align: center;
+  margin-top: 10px; }
+
+.picture {
+  border-radius: 300px;
+  width: 300px;
+  height: 300px;
+  background-color: white;
+  margin-bottom: 20px; }
+  @media screen and (max-width: 320px) {
+    .picture {
+      width: 150px;
+      height: 150px; } }
+
 #link-content {
   text-align: center; }
-
-.button {
-  font-size: 20px;
-  font-weight: bold;
-  color: white;
-  border: 2px solid white !important;
-  border-radius: 10px;
-  background-color: transparent; }
-  @media screen and (max-width: 1000px) {
-    .button {
-      margin-top: 20px; } }
 
 .button-logo {
   width: 100px; }
 
 #contact-content {
   text-align: center; }
-  @media screen and (min-width: 1000px) {
-    #contact-content {
-      margin-top: 20px; } }
 
 #email-button {
   border-radius: 8px; }
@@ -155,5 +131,46 @@ img, button {
   height: 50px;
   margin-top: 100px;
   background-color: transparent; }
+
+#content {
+  margin-top: 0;
+  position: relative; }
+
+.section {
+  margin-top: 80px; }
+
+.section-header {
+  text-align: center;
+  margin-bottom: 10px; }
+
+.section-content {
+  background-color: white;
+  border-radius: 10px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto; }
+
+.fill-in:hover, .fill-in:active, .fill-in:focus {
+  color: black;
+  background-color: white !important; }
+  @media screen and (max-width: 1100px) {
+    .fill-in:hover, .fill-in:active, .fill-in:focus {
+      color: white;
+      background-color: transparent !important; } }
+
+.wow {
+  visibility: hidden; }
+
+.button {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid white !important;
+  border-radius: 10px;
+  background-color: transparent; }
+
+@media screen and (max-width: 1000px) {
+  .stack-item {
+    margin-bottom: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

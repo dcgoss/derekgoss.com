@@ -1,0 +1,58 @@
+///////////////
+// FRAMEWORK //
+///////////////
+
+#content {
+  margin-top: 0;
+  position: relative;
+}
+
+.section {
+  margin-top: 80px;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.section-content {
+  background-color: white;
+  border-radius: 10px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fill-in:hover, .fill-in:active, .fill-in:focus {
+  color: black;
+  background-color: white !important;
+
+  $touchscreen-max-width: 1100px; // threshold for disabling highlights on touchscreens
+  @media screen and (max-width: $touchscreen-max-width){
+    // don't show highlights on touchscreens
+    color: white;
+    background-color: transparent !important;
+  }
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.button {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  border: 2px solid white !important;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+$bootstrap-column-collapse-width: 1000px;
+.stack-item {
+  @media screen and (max-width: $bootstrap-column-collapse-width){
+    // set spacing for when Bootstrap collapses the buttons into a stack
+    margin-bottom: 20px;
+  }
+}

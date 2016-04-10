@@ -1,0 +1,23 @@
+///////////
+// ABOUT //
+///////////
+
+#pictures {
+  text-align: center;
+  margin-top: 10px;
+  //margin-bottom: 20px;
+}
+
+$picture-width: 300px;
+.picture {
+  border-radius: $picture-width;
+  width: $picture-width;
+  height: $picture-width;
+  background-color: white;
+  margin-bottom: 20px;
+
+  @media screen and (max-width: $picture-width + 20) {
+    width: $picture-width / 2;
+    height: $picture-width / 2;
+  }
+}
