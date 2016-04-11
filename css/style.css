@@ -197,24 +197,38 @@ img, button {
   margin-left: auto;
   margin-right: auto; }
 
-.fill-in:hover, .fill-in:active, .fill-in:focus {
+.fill-in-white:hover, .fill-in-white:active, .fill-in-white:focus {
   color: black;
   background-color: white !important; }
   @media screen and (max-width: 1100px) {
-    .fill-in:hover, .fill-in:active, .fill-in:focus {
+    .fill-in-white:hover, .fill-in-white:active, .fill-in-white:focus {
       color: white;
+      background-color: transparent !important; } }
+
+.fill-in-black:hover, .fill-in-black:active, .fill-in-black:focus {
+  color: white;
+  background-color: black !important; }
+  @media screen and (max-width: 1100px) {
+    .fill-in-black:hover, .fill-in-black:active, .fill-in-black:focus {
+      color: black;
       background-color: transparent !important; } }
 
 .wow {
   visibility: hidden; }
 
-.button {
+.button, .button-white, .button-black {
   font-size: 20px;
   font-weight: bold;
-  color: white;
-  border: 2px solid white !important;
   border-radius: 10px;
   background-color: transparent; }
+
+.button-white {
+  color: white;
+  border: 2px solid white !important; }
+
+.button-black {
+  color: black;
+  border: 2px solid black !important; }
 
 @media screen and (max-width: 1000px) {
   .stack-item {
