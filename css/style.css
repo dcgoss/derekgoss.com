@@ -121,8 +121,13 @@
 
 .footer {
   height: 50px;
+  width: 100%;
   margin-top: 100px;
-  background-color: transparent; }
+  background-color: transparent;
+  text-align: center; }
+
+.footer header {
+  font-size: 30px; }
 
 .gold, h1, header {
   color: #FFDF00 !important; }
