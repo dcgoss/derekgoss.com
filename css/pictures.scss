@@ -2,41 +2,61 @@
 // PICTURES //
 //////////////
 
+@import "framework";
+
 .picture {
   background-color: transparent;
 }
 
 // BIG PICTURES //
 $big-picture-size: 300px;
+$smaller-big-picture-size: $big-picture-size * 0.75;
+$big-picture-collapse-size: $big-picture-size + 20;
 
 .big-picture {
   @extend .picture;
   width: $big-picture-size;
   height: $big-picture-size;
 
-  @media screen and (max-width: $big-picture-size + 20) {
-    width: $big-picture-size / 2;
-    height: $big-picture-size / 2;
+  @media screen and (max-width: $big-picture-collapse-size) {
+    width: $smaller-big-picture-size;
+    height: $smaller-big-picture-size;
   }
 }
 
 .big-picture-circle {
   @extend .big-picture;
   border-radius: $big-picture-size;
+
+  @media screen and (max-width: $big-picture-collapse-size) {
+    border-radius: $smaller-big-picture-size;
+  }
 }
 
 .big-picture-rounded {
   @extend .big-picture;
   border-radius: $big-picture-size / 5;
+
+  @media screen and (max-width: $big-picture-collapse-size) {
+    border-radius: $smaller-big-picture-size / 5;
+  }
 }
 
 // HEADER PICTURE //
 .header-picture {
   margin-top: -($big-picture-size / 2);
+
+  @media screen and (max-width: $big-picture-collapse-size) {
+    margin-top: -($smaller-big-picture-size / 2);
+  }
 }
 
 .intersecting-picture-offset {
   margin-top: ($big-picture-size / 2) + 10;
+
+  @media screen and (max-width: $big-picture-collapse-size) {
+    margin-top: ($smaller-big-picture-size / 2) + 10;
+  }
 }
 
 // SMALL PICTURES //
@@ -56,4 +76,28 @@ $small-picture-size: 100px;
 .small-picture-rounded {
   @extend .small-picture;
   border-radius: $small-picture-size / 5;
+}
+
+// LOGO PICTURES //
+$logo-picture-size: 100px;
+$small-logo-picture-size: $logo-picture-size - 25px;
+
+.logo-picture {
+  @extend .picture;
+  width: $logo-picture-size;
+  height: $logo-picture-size;
+
+  @media screen and (max-width: $bootstrap-column-collapse-width) {
+    width: $small-logo-picture-size;
+    height: $small-logo-picture-size;
+  }
+}
+
+.logo-picture-rounded {
+  @extend .logo-picture;
+  border-radius: $logo-picture-size / 5;
+
+  @media screen and (max-width: $bootstrap-column-collapse-width) {
+    border-radius: $small-logo-picture-size / 5;
+  }
 }
