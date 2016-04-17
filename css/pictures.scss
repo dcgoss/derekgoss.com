@@ -1,14 +1,14 @@
-///////////
-// ABOUT //
-///////////
-$big-picture-size: 300px;
-$small-picture-size: 100px;
+//////////////
+// PICTURES //
+//////////////
 
 .picture {
-  background-color: white;
+  background-color: transparent;
 }
 
 // BIG PICTURES //
+$big-picture-size: 300px;
+
 .big-picture {
   @extend .picture;
   width: $big-picture-size;
@@ -30,11 +30,22 @@ $small-picture-size: 100px;
   border-radius: $big-picture-size / 5;
 }
 
+// HEADER PICTURE //
+.header-picture {
+  margin-top: -($big-picture-size / 2);
+}
+
+.intersecting-picture-offset {
+  margin-top: ($big-picture-size / 2) + 10;
+}
+
 // SMALL PICTURES //
+$small-picture-size: 100px;
+
 .small-picture {
   @extend .picture;
-  width: $small-picture-size + 10;
-  height: $small-picture-size + 10;
+  width: $small-picture-size;
+  height: $small-picture-size;
 }
 
 .small-picture-circle {
@@ -45,14 +56,4 @@ $small-picture-size: 100px;
 .small-picture-rounded {
   @extend .small-picture;
   border-radius: $small-picture-size / 5;
-}
-
-// HEADER PICTURE //
-.about-header-picture {
-  margin-top: -($big-picture-size / 2);
-  text-align: center;
-}
-
-.intersecting-picture-offset {
-  margin-top: ($big-picture-size / 2) + 10;
 }

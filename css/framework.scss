@@ -27,6 +27,10 @@
   color: #A20000 !important;
 }
 
+.black {
+  color: #000 !important;
+}
+
 //////////
 // BASE //
 //////////
@@ -97,7 +101,7 @@ img, button {
 
 .section-header {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .section-content {
@@ -163,21 +167,42 @@ $bootstrap-column-collapse-width: 1000px;
   }
 }
 
+.intro-section {
+  text-align: center;
+}
+
 .subsection {
   margin-top: 20px;
 }
 
 .subsection-header {
+  @extend .center-and-pad;
   text-align: center;
   font-weight: bold;
 }
 
-.highlights {
+.subsection-header p {
+  font-weight: normal;
+  //max-width: 800px;
+}
+
+.center-and-pad {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center;
 }
 
+.subsection-content {
+  margin-top: 20px;
+}
+
 .highlight-section {
   margin-bottom: 20px;
+}
+
+.module-link img:hover {
+  opacity: 0.8;
+}
+.module-link{
+  color: #333!important;
 }

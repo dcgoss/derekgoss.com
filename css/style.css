@@ -75,7 +75,7 @@
   margin-top: -30px; }
 
 .picture, .big-picture, .big-picture-circle, .big-picture-rounded, .small-picture, .small-picture-circle, .small-picture-rounded {
-  background-color: white; }
+  background-color: transparent; }
 
 .big-picture, .big-picture-circle, .big-picture-rounded {
   width: 300px;
@@ -91,22 +91,21 @@
 .big-picture-rounded {
   border-radius: 60px; }
 
+.header-picture {
+  margin-top: -150px; }
+
+.intersecting-picture-offset {
+  margin-top: 160px; }
+
 .small-picture, .small-picture-circle, .small-picture-rounded {
-  width: 110px;
-  height: 110px; }
+  width: 100px;
+  height: 100px; }
 
 .small-picture-circle {
   border-radius: 100px; }
 
 .small-picture-rounded {
   border-radius: 20px; }
-
-.about-header-picture {
-  margin-top: -150px;
-  text-align: center; }
-
-.intersecting-picture-offset {
-  margin-top: 160px; }
 
 #link-content {
   text-align: center; }
@@ -139,6 +138,9 @@
 
 .haverford-red {
   color: #A20000 !important; }
+
+.black {
+  color: #000 !important; }
 
 body {
   background-color: black; }
@@ -188,7 +190,7 @@ img, button {
 
 .section-header {
   text-align: center;
-  margin-bottom: 10px; }
+  margin-bottom: 20px; }
 
 .section-content {
   background-color: white;
@@ -234,6 +236,9 @@ img, button {
   .stack-item {
     margin-bottom: 20px; } }
 
+.intro-section {
+  text-align: center; }
+
 .subsection {
   margin-top: 20px; }
 
@@ -241,12 +246,24 @@ img, button {
   text-align: center;
   font-weight: bold; }
 
-.highlights {
+.subsection-header p {
+  font-weight: normal; }
+
+.center-and-pad, .subsection-header {
   padding-left: 20px;
   padding-right: 20px;
   text-align: center; }
 
+.subsection-content {
+  margin-top: 20px; }
+
 .highlight-section {
   margin-bottom: 20px; }
+
+.module-link img:hover {
+  opacity: 0.8; }
+
+.module-link {
+  color: #333 !important; }
 
 /*# sourceMappingURL=style.css.map */
