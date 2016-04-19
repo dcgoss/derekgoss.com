@@ -6,10 +6,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
         <title>Derek Goss</title>
-        <link href="images/logo-rounded.favicon.png" rel="icon">
+        <meta name="description"
+              content="Derek Goss is a student, founder, programmer, runner, and an overall pretty cool guy in my opinion.">
+        <link href="images/logos/dg/dg-logo-rounded.favicon.png" rel="icon">
 
         <!-- FONTS -->
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
+        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200' rel='stylesheet' type='text/css'>
 
         <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="libraries/bootstrap-3.3.6/css/bootstrap.min.css">
@@ -28,71 +31,301 @@
         <![endif]-->
     </head>
     <body>
-        <div id="content" class="container">
-            <div id="particles-js"></div>
+        <div id="particles-js"></div>
+        <div id="main" class="container">
             <div id="hero" class="row">
-                <div id="logo-background" class="wow zoomIn" data-wow-duration="1s">
-                    <img id="logo" src="images/logo-text.png">
+                <div id="header-text" class="wow fadeIn" data-wow-duration="0.5s" data-wow-delay="0.5s">
+                    <header id="greeting"></header>
                 </div>
-                <a href="#first-section">
-                    <div id="down-indicator" class="fill-in btn wow fadeIn" data-wow-duration="1s" data-wow-delay="1s"
-                         onmouseover="if ($(window).width() > 1000) {document.getElementById('down-icon').src='images/down-icon-black.png'}"
-                         onmouseout="if ($(window).width() > 1000) {document.getElementById('down-icon').src='images/down-icon-white.png'}">
-                        <img id="down-icon" src="images/down-icon-white.png">
+                <div id="logo-background" class="wow zoomIn" data-wow-duration="0.5s">
+                    <img id="logo" src="images/logos/dg/dg-logo-text.png">
+                </div>
+                <a href="#content">
+                    <div id="down-indicator-button" class="fill-in-white btn wow fadeInDown" data-wow-duration="0.5s" data-wow-delay="1s"
+                         onmouseover="if ($(window).width() > 1100) {document.getElementById('down-icon').src='images/icons/down-icon-black.png'}"
+                         onmouseout="if ($(window).width() > 1100) {document.getElementById('down-icon').src='images/icons/down-icon-white.png'}">
+                        <img id="down-icon" src="images/icons/down-icon-white.png">
                     </div>
                 </a>
             </div>
-            <!--<div id="about" class="section wow fadeInLeft" data-wow-duration="1s">-->
-            <!--<div id="about-header" class="row section-header">-->
-            <!--<h1>About</h1>-->
-            <!--</div>-->
-            <!--<div id="about-content" class="row section-content">-->
-            <!--<p>-->
-            <!--Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been-->
-            <!--the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley-->
-            <!--of type and scrambled it to make a type specimen book. It has survived not only five centuries,-->
-            <!--but also the leap into electronic typesetting, remaining essentially unchanged. It was-->
-            <!--popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,-->
-            <!--and more recently with desktop publishing software like Aldus PageMaker including versions of-->
-            <!--Lorem Ipsum.-->
-            <!--</p>-->
-            <!--</div>-->
-            <!--</div>-->
-            <div id="first-section">
-                <div id="links" class="first-section section wow fadeInRight" data-wow-duration="1s">
-                    <div id="link-header" class="row section-header">
+            <div id="content">
+                <div id="about" class="section">
+                    <div id="about-header" class="row section-header wow fadeIn" data-wow-duration="0.5s">
+                        <h1>Derek Goss</h1>
+                    </div>
+                    <div id="intro" class="row section-content intersecting-picture-offset wow fadeInUp" data-wow-duration="0.5s">
+                        <div class="center-and-pad">
+                            <img class="header-picture big-picture-circle" src="images/activities/chemistry.png">
+                            <p>
+                                Hey, nice to see you! <br>
+                                My name is Derek Goss.<br>
+                            </p>
+                            <p>
+                                Welcome to my website. Here's a little about me.
+                            </p>
+                        </div>
+                    </div>
+                    <div id="am" class="row subsection section-content wow fadeInUp" data-wow-duration="0.5s">
+                        <div class="row subsection-header">
+                            <h2>I am</h2>
+                        </div>
+                        <div class="row subsection-content center-and-pad">
+                            <div class="col-md-6 highlight-section">
+                                <img class="small-picture-circle" src="images/logos/harriton-logo.png">
+                                <h3>sophomore @
+                                    <a class="harriton-red" target="_blank" href="http://www.lmsd.org/harritonhs/index.aspx">
+                                        Harriton High School
+                                    </a>
+                                </h3>
+                            </div>
+                            <div class="col-md-6 highlight-section">
+                                <img class="small-picture-rounded" src="images/logos/pickle-logo.png">
+                                <h3>founder @
+                                    <a class="pickle-green" target="_blank" href="https://getpickleapp.com">
+                                        Pickle
+                                    </a>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="from" class="row subsection section-content wow fadeInUp" data-wow-duration="0.5s">
+                        <div class="row center-and-pad">
+                            <div class="col-md-6 highlight-section">
+                                <h2>I'm from</h2>
+                                <a class="carolina-blue" target="_blank" href="https://www.google.com/maps/place/Chapel+Hill,+NC/@35.9210234,-79.0743104,13z/data=!3m1!4b1!4m2!3m1!1s0x89acc31c216e7ea7:0x7f03bae00443e4cb">
+                                    <h3>Chapel Hill (NC)</h3>
+                                </a>
+                                <img class="big-picture-rounded" src="images/locations/chapel-hill.png">
+                            </div>
+                            <div class="col-md-6 highlight-section">
+                                <h2>I live in</h2>
+                                <a class="haverford-red" target="_blank" href="https://www.google.com/maps/place/Haverford,+PA/@40.0065925,-75.3351906,14z/data=!3m1!4b1!4m2!3m1!1s0x89c6c06cd47972d7:0x3a86f6b8329f4054">
+                                    <h3>Haverford (PA)</h3>
+                                </a>
+                                <img class="big-picture-rounded" src="images/locations/haverford.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="athletics" class="row subsection section-content wow fadeInUp" data-wow-duration="0.5s">
+                        <div class="row subsection-header">
+                            <h2>Athletics</h2>
+                        </div>
+                        <div class="subsection-content center-and-pad">
+                            <div class="row">
+                                <div class="col-md-4 highlight-section">
+                                    <img class="big-picture-rounded" src="images/athletics/xc.png">
+                                    <h3>cross country</h3>
+                                </div>
+                                <div class="col-md-4 highlight-section">
+                                    <img class="big-picture-rounded" src="images/athletics/indoor-track.png">
+                                    <h3>winter track</h3>
+                                </div>
+                                <div class="col-md-4 highlight-section">
+                                    <img class="big-picture-rounded" src="images/athletics/outdoor-track.png">
+                                    <h3>spring track</h3>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12 highlight-section">
+                                    <a target="_blank" href="http://pa.milesplit.com/athletes/insider/4578321-derek-goss/stats#.Vwwg5ZMrLiE" title="Race Results">
+                                        <button id="penntrack" class="fill-in-black button-black btn">
+                                            Race Results
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="interests" class="row subsection section-content wow fadeInUp" data-wow-duration="0.5s">
+                        <div class="row subsection-header">
+                            <h2>I like</h2>
+                        </div>
+                        <div class="subsection-content center-and-pad">
+                            <div class="row">
+                                <div class="col-md-6 highlight-section">
+                                    <img class="big-picture-rounded" src="images/activities/sailing.png">
+                                    <h3>sailing</h3>
+                                </div>
+                                <div class="col-md-6 highlight-section">
+                                    <img class="big-picture-rounded" src="images/activities/camera.png">
+                                    <h3>photography</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="technical" class="section">
+                    <div id="technical-header" class="row section-header wow fadeIn" data-wow-duration="0.5s">
+                        <h1>Technical Skills</h1>
+                    </div>
+                    <div id="technical-intro" class="row center-and-pad section-content intersecting-picture-offset wow fadeInUp" data-wow-duration="0.5s">
+                        <img class="header-picture big-picture-rounded" src="images/activities/programming.png">
+                        <p>
+                            I love solving problems, and working with technology to bring ideas to life.
+                        </p>
+                        <p>
+                            Currently I am the founder and sole developer at
+                            <b><a class="pickle-green" target="_blank" href="https://getpickleapp.com">
+                                Pickle</a></b>. <br>
+                            I work across the full stack on our database, servers, website, and iOS app, building
+                            a robust social network.
+                        </p>
+                        <p>
+                            Here are some languages, frameworks, technologies, and services that I
+                            currently work with.
+                        </p>
+                    </div>
+                    <div id="languages" class="row subsection section-content wow fadeInUp" data-wow-duration="0.5s">
+                        <div class="row subsection-header">
+                            <h2>Programming</h2>
+                        </div>
+                        <div class="subsection-content center-and-pad">
+                            <div class="row">
+                                <div class="col-xs-6 highlight-section">
+                                    <a class="module-link" target="_blank" href="https://www.python.org">
+                                        <img class="logo-picture" src="images/logos/python-logo.png">
+                                        <h3>python</h3>
+                                    </a>
+                                </div>
+                                <div class="col-xs-6 highlight-section">
+                                    <a class="module-link" target="_blank" href="https://swift.org">
+                                        <img class="logo-picture" src="images/logos/swift-logo.png">
+                                        <h3>swift</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="technologies" class="row subsection section-content wow fadeInUp" data-wow-duration="0.5s">
+                        <div class="row subsection-header">
+                            <h2>Technologies</h2>
+                            <p>
+                                I'm a big fan of containers. Thanks to Docker and Kubernetes, code is portable and
+                                deployed to servers in seconds.
+                            </p>
+                        </div>
+                        <div class="subsection-content center-and-pad">
+                            <div class="row">
+                                <div class="col-xs-4 highlight-section">
+                                    <a class="module-link" target="_blank" href="https://www.djangoproject.com">
+                                        <img class="logo-picture-rounded" src="images/logos/django-logo.png">
+                                        <h3>django</h3>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 highlight-section">
+                                    <a class="module-link" target="_blank" href="https://www.docker.com">
+                                        <img class="logo-picture" src="images/logos/docker-logo.png">
+                                        <h3>docker</h3>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 highlight-section">
+                                    <a class="module-link" target="_blank" href="http://kubernetes.io">
+                                        <img class="logo-picture" src="images/logos/kubernetes-logo.png">
+                                        <h3>kubernetes</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="cloud" class="row subsection section-content wow fadeInUp" data-wow-duration="0.5s">
+                        <div class="row subsection-header">
+                            <h2>Cloud Computing</h2>
+                            <p>
+                                I write
+                                <a target="_blank" href="https://en.wikipedia.org/wiki/Infrastructure_as_Code">
+                                    infrastructure as code
+                                </a>
+                                to build fault-tolerant, scalable cloud architectures.
+                            </p>
+                        </div>
+                        <div class="subsection-content center-and-pad">
+                            <div class="row">
+                                <div class="col-xs-4 highlight-section">
+                                    <a class="module-link" target="_blank" href="https://terraform.io">
+                                        <img class="logo-picture" src="images/logos/terraform-logo.png">
+                                        <h3>terraform</h3>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 highlight-section">
+                                    <a class="module-link" target="_blank" href="https://cloud.google.com">
+                                        <img class="logo-picture" src="images/logos/gcp-logo.png">
+                                        <h3>google cloud platform</h3>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 highlight-section">
+                                    <a class="module-link" target="_blank" href="https://aws.amazon.com">
+                                        <img class="logo-picture" src="images/logos/aws-logo.png">
+                                        <h3>amazon web services</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="design" class="row subsection section-content wow fadeInUp" data-wow-duration="0.5s">
+                        <div class="row subsection-header">
+                            <h2>Design</h2>
+                            <p>
+                                I like my design work to be clean, intuitive, and balanced.
+                            </p>
+                        </div>
+                        <div class="subsection-content center-and-pad">
+                            <div class="row">
+                                <div class="col-xs-4 highlight-section">
+                                    <a class="module-link" target="_blank" href="https://www.w3.org/TR/html5">
+                                        <img class="logo-picture" src="images/logos/html-logo.png">
+                                        <h3>html</h3>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 highlight-section">
+                                    <a class="module-link" target="_blank" href="http://sass-lang.com/">
+                                        <img class="logo-picture" src="images/logos/sass-logo.png">
+                                        <h3>sass</h3>
+                                    </a>
+                                </div>
+                                <div class="col-xs-4 highlight-section">
+                                    <a class="module-link" target="_blank" href="http://www.adobe.com/photoshop">
+                                        <img class="logo-picture" src="images/logos/photoshop-logo.png">
+                                        <h3>photoshop</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="links" class="section">
+                    <div id="link-header" class="row section-header wow fadeIn" data-wow-duration="0.5s">
                         <h1>Links</h1>
                     </div>
                     <div id="link-content" class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 wow fadeInLeftBig" data-wow-duration="0.8s">
                             <a target="_blank" href="https://github.com/dcgoss" title="Github">
-                                <button id="github-button" class="fill-in button btn"
-                                        onmouseover="if ($(window).width() > 1000) {document.getElementById('github-logo').src='images/github-logo-black.png'}"
-                                        onmouseout="if ($(window).width() > 1000) {document.getElementById('github-logo').src='images/github-logo-white.png'}">
-                                    <img id="github-logo" class="fill-in button-logo"
-                                         src="images/github-logo-white.png">
+                                <button id="github-button" class="fill-in-white button-white btn stack-item"
+                                        onmouseover="if ($(window).width() > 1100) {document.getElementById('github-logo').src='images/logos/github/github-logo-black.png'}"
+                                        onmouseout="if ($(window).width() > 1100) {document.getElementById('github-logo').src='images/logos/github/github-logo-white.png'}">
+                                    <img id="github-logo" class="fill-in-white button-logo"
+                                         src="images/logos/github/github-logo-white.png">
                                 </button>
                             </a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 wow fadeInRightBig" data-wow-duration="0.8s">
                             <a target="_blank" href="https://instagram.com/dcgoss" title="Instagram">
-                                <button id="instagram-button" class="fill-in button btn"
-                                        onmouseover="if ($(window).width() > 1000) {document.getElementById('instagram-logo').src='images/instagram-logo-black.png'}"
-                                        onmouseout="if ($(window).width() > 1000) {document.getElementById('instagram-logo').src='images/instagram-logo-white.png'}">
-                                    <img id="instagram-logo" class="fill-in button-logo"
-                                         src="images/instagram-logo-white.png">
+                                <button id="instagram-button" class="fill-in-white button-white btn stack-item"
+                                        onmouseover="if ($(window).width() > 1100) {document.getElementById('instagram-logo').src='images/logos/instagram/instagram-logo-black.png'}"
+                                        onmouseout="if ($(window).width() > 1100) {document.getElementById('instagram-logo').src='images/logos/instagram/instagram-logo-white.png'}">
+                                    <img id="instagram-logo" class="fill-in-white button-logo"
+                                         src="images/logos/instagram/instagram-logo-white.png">
                                 </button>
                             </a>
                         </div>
                     </div>
-                    <div id="contact" class="section wow fadeInLeft" data-wow-duration="1s">
-                        <div id="contact-header" class="row section-header">
+                    <div id="contact" class="section">
+                        <div id="contact-header" class="row section-header wow fadeIn" data-wow-duration="0.5s">
                             <h1>Contact</h1>
                         </div>
                         <div id="contact-content" class="row">
-                            <div class="col-md-12">
-                                <a href="mailto:dcgoss14@gmail.com" title="Email">
-                                    <button id="email-button" class="fill-in button btn">
+                            <div class="col-md-12 wow fadeInUp" data-wow-duration="0.8s">
+                                <a href="mailto:dcgoss14@gmail.com" title="Email Me">
+                                    <button id="email-button" class="fill-in-white button-white btn">
                                         Email Me
                                     </button>
                                 </a>
@@ -103,7 +336,7 @@
             </div>
         </div>
         <footer class="footer">
-
+            <header id="copyright">© 2016 Derek Goss</header>
         </footer>
         <div id="scripts">
             <!-- SCRIPTS-->
@@ -122,11 +355,14 @@
             <!-- WOW -->
             <script src="libraries/wow.min.js" type="text/javascript"></script>
             <script type="text/javascript">
-                new WOW({offset: 5}).init();
+                new WOW().init();
             </script>
 
-            <!-- Smooth Scroll -->
+            <!-- Custom JS -->
             <script src="js/smooth-scroll.js" type="text/javascript"></script>
+            <script src="js/greeting.js" type="text/javascript"></script>
+            <!--<script src="js/picture-animations.js" type="text/javascript"></script>-->
+
         </div>
 
     </body>

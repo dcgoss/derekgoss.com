@@ -1,0 +1,108 @@
+//////////
+// HERO //
+//////////
+$rotated-device-max-height: 450px;
+
+#hero {
+  height: 100vh;
+  width: 100%; // keeps the page from being wider than the screen
+  background-color: black;
+}
+
+#particles-js {
+  left: 0; // removes the odd left margin that was being created
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
+
+// GREETING //
+#header-text {
+  $header-text-top: 20%;
+
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: $header-text-top;
+  left: 0;
+
+  @media screen and (max-height: $rotated-device-max-height) {
+    top: $header-text-top - 12%;
+  }
+
+}
+
+// LOGO //
+$device-max-width: 800px; // threshold for crossing over to smaller logo size
+
+$logo-size: 200px;
+$logo-size-small: $logo-size / 2;
+$logo-container-size: $logo-size + 20;
+$logo-container-size-small: $logo-size-small + 20;
+
+#logo-background {
+  position: absolute;
+  background-color: white;
+  border-radius: $logo-container-size / 5;
+  left: 50%;
+  top: 50%;
+  margin-left: -($logo-container-size / 2);
+  margin-top: -($logo-container-size / 2);
+
+  width: $logo-container-size;
+  height: $logo-container-size;
+  @media screen and (max-width: $device-max-width) {
+    border-radius: $logo-container-size-small / 5;
+    margin-left: -($logo-container-size-small / 2);
+    margin-top: -($logo-container-size-small / 2);
+    width: $logo-container-size-small;
+    height: $logo-container-size-small;
+  }
+}
+
+#logo {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -($logo-size / 2);
+  margin-top: -($logo-size / 2);
+  width: $logo-size;
+  height: $logo-size;
+  @media screen and (max-width: $device-max-width) {
+    margin-left: -($logo-size-small / 2);
+    margin-top: -($logo-size-small / 2);
+    width: $logo-size-small;
+    height: $logo-size-small;
+  }
+
+}
+
+// DOWN INDICATOR //
+$down-logo-size: 60px;
+$down-background-size: $down-logo-size + 10;
+#down-indicator-button {
+  $down-indicator-top: 70%;
+
+  position: absolute;
+  border: 1px solid white;
+  border-radius: $down-background-size;
+  width: $down-background-size;
+  height: $down-background-size;
+  left: 50%;
+  top: 70%;
+  margin-left: -($down-background-size / 2);
+  text-align: left; // keeps from interfering with #down-icon's alignment
+
+  @media screen and (max-height: $rotated-device-max-height) {
+    top: $down-indicator-top + 5%;
+  }
+}
+
+#down-icon {
+  position: relative;
+  width: $down-logo-size;
+  left: 50%;
+  top: 50%;
+  margin-left: -($down-logo-size / 2);
+  margin-top: -($down-logo-size / 2);
+}
