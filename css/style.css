@@ -213,15 +213,6 @@ img, button {
 .module-link img:hover {
   opacity: 0.8; }
 
-.module-link h3 {
-  color: #333 !important; }
-  @media screen and (max-width: 992px) {
-    .module-link h3 {
-      font-size: 18px; } }
-  @media screen and (max-width: 350px) {
-    .module-link h3 {
-      font-size: 15px; } }
-
 .picture, .big-picture, .big-picture-circle, .big-picture-rounded, .small-picture, .small-picture-circle, .small-picture-rounded, .logo-picture, .logo-picture-rounded {
   background-color: transparent; }
 
@@ -442,14 +433,5 @@ img, button {
 
 .module-link img:hover {
   opacity: 0.8; }
-
-.module-link h3 {
-  color: #333 !important; }
-  @media screen and (max-width: 992px) {
-    .module-link h3 {
-      font-size: 18px; } }
-  @media screen and (max-width: 350px) {
-    .module-link h3 {
-      font-size: 15px; } }
 
 /*# sourceMappingURL=style.css.map */
