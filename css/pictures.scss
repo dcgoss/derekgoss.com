@@ -101,3 +101,19 @@ $small-logo-picture-size: $logo-picture-size - 25px;
     border-radius: $small-logo-picture-size / 5;
   }
 }
+
+// OTHER PICTURES //
+.sports-picture {
+  @extend .picture;
+  width: $big-picture-size;
+  height: auto;
+  border-radius: 15px;
+  @media screen and (max-width: $big-picture-collapse-size) {
+    width: $smaller-big-picture-size;
+  }
+}
+
+.full-picture {
+  @extend .big-picture-rounded;
+  object-fit: cover;
+}
