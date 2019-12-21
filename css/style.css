@@ -363,6 +363,15 @@ img, button {
   }
 }
 
+.logo-picture-long {
+  height: 80px;
+}
+@media screen and (max-width: 992px) {
+  .logo-picture-long {
+    height: 70px;
+  }
+}
+
 .sports-picture {
   width: 300px;
   height: auto;

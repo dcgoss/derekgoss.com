@@ -102,6 +102,13 @@ $small-logo-picture-size: $logo-picture-size - 25px;
   }
 }
 
+.logo-picture-long {
+  height: 80px;
+  @media screen and (max-width: $bootstrap-column-collapse-width) {
+    height: 70px;
+  }
+}
+
 // OTHER PICTURES //
 .sports-picture {
   @extend .picture;
