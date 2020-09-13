@@ -23,6 +23,14 @@
   color: #3CD638 !important;
 }
 
+$sense-red: #F47973;
+.sense-red {
+  color: $sense-red !important;
+}
+.sense-navy {
+  color: #10143A !important;
+}
+
 .synchro-gold {
   color: #DDAD18 !important;
 }
@@ -214,4 +222,8 @@ $bootstrap-column-collapse-width: 992px;
 
 .module-link img:hover {
   opacity: 0.8;
+}
+
+.design-section {
+  background-color: $sense-red;
 }

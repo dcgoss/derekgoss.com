@@ -105,6 +105,14 @@
   color: #3CD638 !important;
 }
 
+.sense-red {
+  color: #F47973 !important;
+}
+
+.sense-navy {
+  color: #10143A !important;
+}
+
 .synchro-gold {
   color: #DDAD18 !important;
 }
@@ -279,6 +287,10 @@ img, button {
   opacity: 0.8;
 }
 
+.design-section {
+  background-color: #F47973;
+}
+
 .picture, .sports-picture, .logo-picture, .logo-picture-rounded, .small-picture, .small-picture-rounded, .small-picture-circle, .big-picture, .big-picture-rounded, .full-picture, .big-picture-circle {
   background-color: transparent;
 }
@@ -387,6 +399,15 @@ img, button {
   object-fit: cover;
 }
 
+.sense-picture {
+  height: 200px;
+}
+@media screen and (max-width: 992px) {
+  .sense-picture {
+    height: 150px;
+  }
+}
+
 #link-content {
   text-align: center;
 }
@@ -430,6 +451,14 @@ img, button {
 
 .pickle-green {
   color: #3CD638 !important;
+}
+
+.sense-red {
+  color: #F47973 !important;
+}
+
+.sense-navy {
+  color: #10143A !important;
 }
 
 .synchro-gold {
@@ -604,6 +633,10 @@ img, button {
 
 .module-link img:hover {
   opacity: 0.8;
+}
+
+.design-section {
+  background-color: #F47973;
 }
 
 /*# sourceMappingURL=style.css.map */
