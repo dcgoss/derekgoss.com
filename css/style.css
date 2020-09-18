@@ -383,6 +383,11 @@ img, button {
     height: 70px;
   }
 }
+@media screen and (max-width: 350px) {
+  .logo-picture-long {
+    height: 50px !important;
+  }
+}
 
 .sports-picture {
   width: 300px;
@@ -399,12 +404,27 @@ img, button {
   object-fit: cover;
 }
 
+.cornell-racing-picture {
+  height: 65px;
+  margin-top: 20px;
+}
+@media screen and (max-width: 350px) {
+  .cornell-racing-picture {
+    height: 50px !important;
+  }
+}
+
 .sense-picture {
   height: 200px;
 }
 @media screen and (max-width: 992px) {
   .sense-picture {
-    height: 150px;
+    height: 125px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .sense-picture {
+    height: 100px !important;
   }
 }
 
